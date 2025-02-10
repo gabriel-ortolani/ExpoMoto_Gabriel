@@ -1,23 +1,26 @@
 /* Font importada do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+/* Variáveis */
+:root {
     --primary: #fa6600;
     --secondary: #95989a;
     --text-color: #fff;
     --text-secondary: #000;
-    --text-tertiay: #5d5d5d;
+    --text-tertiary: #5d5d5d;
 }
 
-*{
+/* ** Resets gerais ** */
+* {
     font-family: "Montserrat", serif;
     margin: 0;
     padding: 0;
 }
 
-/* ***Event form*** */
-#event-subscription{
-    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/moto5.jpg);
+/* *** Event form *** */
+#event-subscription {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../img/moto5.jpg");
     background-position: center;
     background-size: cover;
     height: 85vh;
@@ -27,16 +30,17 @@
     color: var(--text-color);
 }
 
-#disclaimer h2, #disclaimer .event-date{
+#disclaimer h2,
+#disclaimer .event-date {
     color: var(--primary);
 }
 
-#disclaimer h2{
+#disclaimer h2 {
     font-size: 3em;
     margin-bottom: 1em;
 }
 
-#disclaimer .about-event{
+#disclaimer .about-event {
     font-size: 2em;
     text-transform: uppercase;
     max-width: 350px;
@@ -44,47 +48,48 @@
     margin-bottom: 1em;
 }
 
-#disclaimer p{
+#disclaimer p {
     font-size: 1.2em;
     margin-bottom: 0.3em;
 }
 
-#disclaimer .event-date{
+#disclaimer .event-date {
     font-weight: bold;
 }
 
-#subscription-form{
+#subscription-form {
     background-color: var(--secondary);
-    padding: 2rem;
+    padding: 2em;
     max-width: 22%;
 }
 
-#subscription-form p{
+#subscription-form p {
     font-size: 1.5em;
     color: var(--text-secondary);
     margin-bottom: 1em;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.8em;
 }
 
 .form-group label {
-    color:var(--text-tertiay);
+    color: var(--text-tertiary);
     margin-bottom: 0.3em;
     font-weight: bold;
 }
 
-.fom-group input, .form-group select{
+.form-group input,
+.form-group select {
     padding: 6px 8px;
     border-radius: 5px;
     border: none;
     outline: none;
 }
 
-.btn{
+.btn {
     background-color: var(--primary);
     color: var(--text-color);
     text-transform: uppercase;
@@ -92,31 +97,41 @@
     padding: 12px;
     border: none;
     cursor: pointer;
-    opacity: 0.8
+    opacity: 0.8;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 1;
 }
 
+/* ************ */
+
 /* Benefits section */
-#key-benefits h2{
+#key-benefits h2 {
     background-color: var(--secondary);
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     font-weight: 500;
 }
 
-.benefit{
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 20%;
-    color: var(--text-tertiay);
+    color: var(--text-tertiary);
 }
 
-.benefit .benefit-img{
+.benefit .benefit-img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -125,22 +140,25 @@
     margin-bottom: 1em;
 }
 
-#benefit-1{
-    background-image: url(img/hd1.jpg);
+#benefit-1 {
+    background-image: url("../img/hd1.jpg");
 }
 
-#benefit-2{
-    background-image: url(img/hd2.jpg);
+#benefit-2 {
+    background-image: url("../img/hd2.jpg");
 }
 
-#benefit-3{
-    background-image: url(img/hd3.jpg);
+#benefit-3 {
+    background-image: url("../img/hd3.jpg");
 }
 
-/* Event locate */
-#location{
+/* ****************** */
+
+/* Event location */
+#location {
     height: 400px;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/hd1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../img/hd1.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -150,43 +168,46 @@
     margin-bottom: 3em;
 }
 
-#address, #about-location{
+#address,
+#about-location {
     max-width: 30%;
 }
 
-#adress {
+#address {
     display: flex;
 }
 
-#adress i{
+#address i {
     color: var(--primary);
     font-size: 4em;
     margin-right: 0.5em;
 }
 
-#address-detauls{
+#address-details {
     text-align: center;
     font-size: 1.3em;
 }
 
-#about-location h3{
+#about-location h3 {
     color: var(--primary);
     font-size: 2.5em;
     margin-bottom: 1em;
     text-transform: uppercase;
 }
 
-#about-location p{
+#about-location p {
     line-height: 1.5em;
 }
 
+/* **************** */
+
 /* Event details container */
-#details{
+#details {
     width: 80%;
     margin: 0 auto;
 }
 
-.detail{
+.detail {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -194,46 +215,49 @@
     margin-bottom: 4em;
 }
 
-.detail img{
+.detail img {
     width: 50%;
 }
 
-.detail h3{
+.detail h3 {
     margin-bottom: 1em;
     font-size: 2em;
     font-weight: 500;
 }
 
-#detail-1 h3{
+#detail-1 h3 {
     font-size: 3em;
     font-weight: 700;
 }
 
-.detail-description{
+.detail-description {
     width: 100%;
     padding-left: 2em;
 }
 
-#detail-3 .detail-description{
+#detail-3 .detail-description {
     justify-self: flex-start;
 }
 
-.detail-description ul{
+.detail-description ul {
     list-style-position: inside;
 }
 
-.detail-description ul li{
+.detail-description ul li {
     margin-bottom: 0.4em;
 }
 
-.detail-description ul li:last-child{
+.detail-description ul li:last-child {
     font-weight: bold;
 }
 
-/* seção para chamada de ação */
-#cta{
+/* **************** */
+
+/* Call to Action Section */
+#cta {
     height: 300px;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/moto6.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../img/moto6.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -245,19 +269,21 @@
 
 #cta h3 {
     margin-bottom: 1.2em;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 500;
 }
 
-#cta .btn{
+#cta .btn {
     width: 30%;
     margin: 0 auto;
     font-weight: 600;
     font-size: 1.2em;
 }
 
-/* footer */
-#footer{
+/* **************** */
+
+/* Footer */
+#footer {
     text-align: center;
     color: var(--secondary);
     height: 250px;
@@ -266,98 +292,117 @@
     justify-content: center;
 }
 
-#footer h3{
+#footer h3 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
 
-#footer p:nth-child(2){
+#footer p:nth-child(2) {
     margin-bottom: 1em;
     font-size: 1.2em;
 }
 
-#footer span{
+#footer span {
     font-weight: bold;
 }
 
-/* mobile */
-@media (max-width: 450px){
+/* **************** */
+/* Mobile */
+@media (max-width: 450px) {
+
     /* Event form */
-    #event-subscription{
+    #event-subscription {
         flex-direction: column;
         height: auto;
     }
 
-    #disclaimer{
+    #disclaimer {
         padding: 2em;
     }
 
-    #disclaimer h2{
+    #disclaimer h2 {
         margin-bottom: 0.5em;
     }
 
-    #subscription-form{
+    #subscription-form {
         max-width: 70%;
         margin-bottom: 2em;
     }
 
-    /* seção de beneficios */
-    .benefits{
+    /* Benefits section */
+    .benefits {
         flex-direction: column;
         align-items: center;
         width: auto;
         padding: 2em;
     }
 
-    .benefit{
+    .benefit {
         max-width: 100%;
         margin-bottom: 2em;
     }
 
     /* Event location */
-    #locate{
+    #location {
         flex-direction: column;
         height: auto;
         text-align: center;
         padding: 2em 0;
     }
 
-    #address{
+    #address {
         order: 2;
         flex-direction: column;
         max-width: 100%;
     }
 
-    #address i{
+    #address i {
         margin: 0.3em 0;
     }
 
-    #about-location{
+    #about-location {
         order: 1;
         max-width: 100%;
     }
-    
-    #about-location h3{
+
+    #about-location h3 {
         margin-bottom: 0;
     }
 
-    #about-location p{
+    #about-location p {
         display: none;
     }
 
-    /* Event detals container */
-    .detail{
+    /* Event details container */
+    .detail {
         flex-direction: column;
         margin-bottom: 0.5em;
         gap: 0;
     }
 
-    .detail img{
+    .detail img {
         width: 100%;
         margin: 2em 0;
     }
 
-    .detail-1 img{
+    #detail-1 img {
         display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* Call to Action Section */
+    #cta .btn {
+        width: 80%;
     }
 }
